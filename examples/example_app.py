@@ -24,7 +24,7 @@ def app():
 
     # Create the tile grid component and render it
     tile_grid = TileGrid(num_tiles)
-    tile_grid.render(title_list, body_list, icon_list, tile_color=tile_color, tile_shadow=tile_shadow, text_color=text_color)
+    tile_grid.render(title_list, body_list, icon_list, icon_size='1.5', tile_color=tile_color, tile_shadow=tile_shadow, text_color=text_color)
 
     # Add a line plot
     x = np.linspace(0, 10, 100)
@@ -34,3 +34,5 @@ def app():
 
 if __name__ == "__main__":
     app()
+
+)
