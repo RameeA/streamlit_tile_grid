@@ -1,4 +1,4 @@
-from streamlit_tile_grid import TileGrid
+from streamlit_tile_grid.TileRenderer import TileGrid
 import streamlit as st
 
 def app():
