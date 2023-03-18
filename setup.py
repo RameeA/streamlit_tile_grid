@@ -2,7 +2,7 @@ from setuptools import setup, find_packages
 
 setup(
     name='streamlit_tile_grid',
-    version='0.3.3',
+    version='0.3.4',
     author='Ramee Abdallah',
     author_email='ramee.abdallah@hotmail.com',
     description='A custom Streamlit component for rendering tiles',

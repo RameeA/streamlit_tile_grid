@@ -3,11 +3,11 @@ import pandas as pd
 import numpy as np
 
 class TileGrid:
-    def __init__(self, num_tiles=4, grid_size=2):
+    def __init__(self, num_tiles=4):
         self.num_tiles = num_tiles
-        self.grid_size = grid_size
 
-    def render(self, title_list, body_list, icon_list=None, tile_color="rgb(97, 218, 251)"):
+    def render(self, title_list, body_list, icon_list=None, tile_color="#61dafb", tile_shadow="#4398af", text_color="#000"):
+        
         # Define the HTML for the tile grid
         html = """
                 <head>
@@ -20,8 +20,8 @@ class TileGrid:
             # Define the HTML for each tile
             title = title_list[i] if i < len(title_list) else ""
             body = body_list[i] if i < len(body_list) else ""
-            icon = f"<i class='bi-{icon_list[i]}'></i><br>" if icon_list and i < len(icon_list) and icon_list[i] else ""
-            tile_html = f"<div class='tile'><h3>{icon} {title}</h3><p>{body}</p></div>"
+            icon = f"<i class='bi-{icon_list[i]}' style='color:{text_color}'></i><br>" if icon_list and i < len(icon_list) and icon_list[i] else ""
+            tile_html = f"<div class='tile' ><h3 style='color:{text_color}'>{icon} {title}</h3><p style='color:{text_color}'>{body}</p></div>"
             html += tile_html
         html += "</div>"
         # Add the HTML to the Streamlit app
@@ -40,11 +40,11 @@ class TileGrid:
             background-color: {tile_color};
             border: 1px solid #ccc;
             padding: 15px;
-            box-shadow: 0 5px 10px #4398af;
+            box-shadow: 0 5px 10px {tile_shadow};
             border-radius: 5px;
             background: {tile_color};
             text-align: center;
-            height: 200px;
+            height: auto;
             padding: 30px 20px;
             overflow-y: auto;
         }}
