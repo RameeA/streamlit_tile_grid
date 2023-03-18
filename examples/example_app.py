@@ -3,7 +3,7 @@ import streamlit as st
 
 def app():
     st.set_page_config(layout="wide")
-   
+    st.sidebar.title("Streamlit Tile Grid")
     # Define the number of tiles and grid size
     num_tiles = 4
     grid_size = 2
@@ -15,7 +15,7 @@ def app():
 
     # Create the tile grid component and render it
     tile_grid = TileGrid(num_tiles, grid_size)
-    tile_grid.render(title_list, body_list, icon_list)
+    tile_grid.render(title_list, body_list, icon_list, tile_color= "rgb(97, 218, 251)")
 
 if __name__ == "__main__":
     app()
