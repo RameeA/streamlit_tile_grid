@@ -49,6 +49,10 @@ class TileGrid:
             overflow-y: auto;
         }}
 
+        .tile:hover {{
+            transform: scale(1.04);
+        }}
+
         .bi {{
             display: inline-block;
             font-size: 1.5rem;
@@ -66,3 +70,4 @@ class TileGrid:
         """
 
         st.markdown(css, unsafe_allow_html=True)
+
