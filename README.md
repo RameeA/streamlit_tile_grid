@@ -1,5 +1,5 @@
 # Streamlit Tile Grid 
-Library to display tile grid which can be used to showcase key metrics within a dashboard or other application.
+Library to display tile grid which can be used to showcase key metrics within a dashboard or other application. You can use bootstrap icons on the top of your tiles (https://icons.getbootstrap.com/)
 
 ## Installation
 
