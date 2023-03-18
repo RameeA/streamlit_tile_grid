@@ -1,10 +1,10 @@
 from setuptools import setup, find_packages
 
 setup(
-    name='my_streamlit_component',
+    name='streamlit_tile_grid',
     version='0.1',
-    author='Your Name',
-    author_email='your_email@example.com',
+    author='Ramee Abdallah',
+    author_email='ramee.abdallah@hotmail.com',
     description='A custom Streamlit component for rendering tiles',
     packages=find_packages(),
     install_requires=[
