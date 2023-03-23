@@ -24,6 +24,7 @@ def app():
     icon_list = ['bell', 'book', 'people', 'download']
 
     # Create the tile grid component and render it
+    st.title('Tiles')
     tile_grid = TileGrid(num_tiles)
     tile_grid.render(title_list, body_list, icon_list, icon_size='1.5', tile_color=tile_color, tile_shadow=tile_shadow, text_color=text_color)
 
@@ -61,6 +62,7 @@ def app():
             
         ]
     # Create the tile grid component and render it
+    st.title('Donut Metrics')
     donut_grid = DonutRenderer()
     donut_grid.render(donut_params)
 
