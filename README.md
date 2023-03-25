@@ -15,7 +15,7 @@ To run the example:
 2) Install plotly as it is required by the example.
 3) In your terminal run ``` streamlit run examples/example_app.py```
 
-![image](https://user-images.githubusercontent.com/37738513/226087485-70cc884f-0152-40a0-836d-47af108f10ec.png)
+![image](https://user-images.githubusercontent.com/37738513/227699904-247357fb-0fad-47aa-9bea-e5d5fe1bbcae.png)
 
 
 ## Tiles
